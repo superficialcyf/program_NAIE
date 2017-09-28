@@ -1,0 +1,234 @@
+header{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#headermain{
+	width: 80%;
+	display: flex;
+    justify-content: space-between;
+    min-width:  840px;
+    margin: 0 auto;
+}
+#logo{
+	overflow: hidden;
+}
+#header-nav{
+   padding-top: 15px;
+}
+#header-nav a{
+    width: 100%;
+    height: 12px;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    margin: 0 10px;
+}
+#header-features{  
+    padding-top: 15px;
+}
+#header-features a{
+    width: 100%;
+    height: 12px;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    margin-right: 5px;
+}
+#header-features a:nth-child(1){
+    margin-right: 20px;
+}
+#header-features a i{
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+
+#headerMenuBox{
+	background-color: white;
+	width: 100%;
+	display: none;
+	transition: 0.5s;
+	position:fixed;
+	left: 0;
+	top: 60px;
+}
+
+#ladyperfume{
+	font-size: 12px;
+	width: 30%;
+}
+#manperfume{
+	font-size: 12px;
+	width: 30%;
+}
+#makeuptop{
+	width: 100%;
+	float: left;
+}
+#makeupdown{
+	width: 100%;
+	float: left;
+	margin-top: 30px;
+}
+/*makeupfeace*/
+#makeuptopleft{
+	font-size: 12px;
+	width: 30%;
+	float: left;
+}
+/*makeup_eye*/
+#makeuptopmiddle{
+	font-size: 12px;
+	width:30%;
+	float: left;
+	margin: 0 50px 0 50px;
+}
+/*makeup_mouth*/
+#makeuptopright{
+	font-size: 12px;
+	width:30%;
+	float: left;
+}
+#makeupdownleft{
+	font-size: 12px;
+	width: 30%;
+	float: left;
+}
+#makeupdownmiddle{
+	font-size: 12px;
+	width:30%;
+	float: left;
+	margin: 0 50px 0 50px;
+}
+#makeupdownright{
+	font-size: 12px;
+	width:30%;
+	float: left;
+}
+#careskinleft{
+	font-size: 12px;
+	width: 30%;
+}
+#careskinmiddle{
+	font-size: 12px;
+	width: 30%;
+}
+#careskinright{
+	font-size: 12px;
+	width: 30%;
+}
+/*publicCss*/
+
+#headerMenu a:hover{
+	color: darkgrey;
+}
+.partsname{
+	border-bottom: 2px solid gainsboro;
+	font-size: 14px;
+	margin: 16px 0 11px 0;
+}
+.list li{
+	margin-bottom: 7px;
+}
+.showImg{
+	width: 48%;
+	float: right;
+	opacity: 0;
+	transition: 0.5s;
+}
+.showImg img{
+	width: 100%;
+}
+#makeuptop .showImg{
+	width: 38%;
+	margin-right: 30px;
+}
+#makeupdown .showImg{
+	width: 38%;
+	margin-right: 30px;
+}
+
+/*closeBtn*/
+#close{
+	width: 100%;
+	text-align: center;
+}
+#close img{
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+	padding-left: 5px;
+}
+#close a{
+	width: 30%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 14px;
+	color: darkgrey;
+}
+/*登录小页面*/
+#header_login{
+	/*display: none;*/
+	width: 280px;
+	margin-top: -20px;
+	position:absolute;
+	right: 21%;
+	top: 67px;
+	background-color: white;
+}
+#content{
+	width: 100%;
+	height: 13px;
+	background-color: black;
+}
+#content img{
+	width: 20px;
+	height: 13px;
+	float: right;
+}
+#login_form{
+	text-align: center;
+	box-shadow: 4px 4px 15px dimgray;
+	border-radius: 5px;
+	padding-bottom: 20px;
+}
+#login_form h3{
+	width: 100%;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+	padding: 35px 0 13px 0;
+}
+#login_form input{
+	width: 80%;
+	margin: 5px auto;
+}
+#header_login_btn{
+	width: 87%;
+	padding: 10px 25px;
+	border: none;
+	background: black;
+	margin: 5px auto 10px;
+	display: block;
+	color: white;
+	transition:0.5s;
+}
+#header_login_btn:hover{
+	color: black;
+	background-color: darkgrey;
+}
+#login_form a{
+	display: block;
+	padding: 5px 0;
+	font-size: 12px;
+	text-decoration: underline;
+	color: darkgrey;
+}
+#login_form a:hover{
+	color: black;
+	text-decoration: none;
+}

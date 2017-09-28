@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的账户-奈尔-官方网站</title>
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/LoginAndRegistered.css">
+</head>
+<body>
+    <header>
+    
+    </header>
+    <div id="question">
+        <p>如有任何问题 欢迎拨打客服热线  4009-555-888 或通过在线客服联系我们</p>
+    </div>
+    <section id="main">
+    	<div id="main_child">
+        <div id="main_goback">
+            <a href="#"><img src="../img/loginAndregistered/goback.png" alt="">
+            <span id="backword">返回</span>
+            </a>
+        </div>
+        <h1 id="my">我的账户</h1>
+        <div id="main_MyAccount">
+            <div id="oldAccountLogin">
+                <a href="#" id="oldMessage">已注册用户  
+                    <span id="changeOld">
+                    <img src="../img/loginAndregistered/down%20(1).png" alt="" id="old_rrow">
+                    </span>
+                </a>
+                <div id="login_input">
+                    <form action="get" id="form_login">
+                        <label for="">电子邮箱或手机号码<span class="bu">*</span></label>
+                        <input type="text" id="login_username">
+                        	<p id="ar_loginusername"></p>
+                        <label for="">密码<span class="bu">*</span></label>
+                        <input type="password" id="login_password">
+                        	<p id="ar_loginpassword"></p>
+                        <span>
+                        <a href="#" id="forgetpassword">忘记密码？</a>
+                        </span>
+                        <button id="login_btn" value="登录">登录</button>
+                        <span style="font-size: 12px;color: darkgrey;">*必填</span>
+                    </form>
+                    
+                </div>
+            </div>
+            <div id="newAccountRegistered">
+                <a href="#" id="NewRegistered">新用户注册
+                    <span id="changeNew">
+                    <img src="../img/loginAndregistered/down%20(1).png"ss alt="" id="new_rrow">
+                    </span>
+                </a>
+                <div id="registered_input">
+                    <h6 id="hh">创建您的账户，享受专属优惠与个性服务</h6>
+                    <label for="">电子邮件<span>*</span></label><input type="email" id="new_username">
+                    	<p id="ar_username"></p>
+                    <label for="">密码<span>*</span>最少六个字符</label><input type="password" id="new_password">
+                    	<p id="ar_password"></p>
+                    <label for="">确认密码<span>*</span></label><input type="password" id="new_secondpassword">
+                    	<p id="ar_secondpassword"></p>
+                    <label for="">手机号码<span>*</span></label><input type="text" id="new_phone" placeholder="请输入11位手机号码">
+                    	<p id="ar_phone"></p>
+                    <label for="">性别<span>*</span></label>
+                        <select name="性别" id="new_sex">
+                            <option value="选择">选择</option>
+                            <option value="男">男</option>	
+                            <option value="女">女</option>
+                        </select>
+                    	<p id="ar_sex"></p>
+                    <label for="">姓<span>*</span></label><input type="text" id="new_firstname">
+                    	<p id="ar_firstname"></p>
+                    <label for="">名<span>*</span></label><input type="text" id="new_lastname">
+                    	<p id="ar_lastname"></p>
+                    <label for="">生日</label>
+                        <select name="year" id="year">
+                            <option value="年">年</option>
+                        </select>
+                        <select name="" id="mounth">
+                            <option value="月">月</option>
+                        </select>
+                        <select name="" id="days">
+                            <option value="日">日</option>
+                        </select>
+                    <label for="">省</label>
+                        <select name="" id="provens">
+                            <option value="选择">选择</option>
+                        </select>
+                    <label for="">市</label>
+                        <select name="" id="city">
+                            <option value="选择">选择</option>
+                        </select>
+                    <label for="">地址</label><input type="text" id="new_addr">
+                    <label for="">邮政编码</label><input type="text" id="new_zipcode">
+                    	<p id="ar_zipcode"></p>
+                    <div id="checkbox" style="overflow: hidden;">
+                    	<input type="checkbox" id="checkboxaggre" value="" />
+                    	<span id="checkboxpword" style="font-size: 12px;
+							color: darkgrey;width: 90%;float: right;margin-top: 20px;">
+							奈儿重视您的隐私。在您申请注册并点击同意前，我们建议您认真阅读隐私政策并充分理解相关
+							条款内容。该隐私政策涉及对您的个人资料进行采集、使用、分享等详细说明。当您填写
+							注册信息、阅读并点击同意隐私政策后，即表示您已充分阅读、理解并接受隐私政策的
+							全部内容。
+                    	</span>
+                    </div>
+                    <div id="subscription">
+                    	<input type="checkbox" id="checksubscription" checked="checked" />
+                    	<span style="font-size: 12px;
+							color: darkgrey;width: 90%;float: right;margin-top: 20px;">
+                    		订阅奈尔最新资讯
+                    	</span>
+                    </div>
+                    <button id="newregisteredsubmit"/>确认并提交</button>
+                    <span style="font-size: 12px;color: darkgrey;">*必填</span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+    	
+    </footer>
+</body>
+</html>
+<script type="text/javascript" src="../js/jquery3-2-1.min.js"></script>
+<script type="text/javascript" src="../js/regExpTools.js" ></script>
+<script type="text/javascript" src="../js/LoginAndRegistered.js"></script>
+<script type="text/javascript">
+	window.onload = function (){
+		$("header").load("publicHeader.html",function(){
+			$('body').append('<script type="text/javascript" src="../js/publicHeader.js">')
+		});
+		$("footer").load("publicFooter.html");
+	}
+</script>

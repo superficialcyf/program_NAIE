@@ -1,0 +1,50 @@
+/*footer*/
+#footerMenu{
+	padding: 40px 0 40px 0;
+	border-top: 1px solid darkgray; 
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+#message{
+	 width: 76px;
+	 height: 39px;
+	 background-color: black;
+	 color: white;
+	 border: none;
+	 margin-top: 5px;
+	 transition: 0.5s;
+}
+#message:hover{
+	background-color: darkgray;
+	color: black;
+	
+}
+#china-auh{
+	padding-left: 20px;
+	display: block;
+}
+#copyright{
+	float: left;
+}
+#copyright a{
+	color: darkgray;
+	font-size: 12px;
+	padding-left: 10px;
+}
+#copyright a:hover{
+	color: black;
+}
+#footerlist a{
+	color: darkgrey;
+	font-size: 12px;
+	float: left;
+	margin-left: 30px;
+}
+#footerlist a:hover{
+	color: black;
+}
+#footerlist{
+	margin-left: 50px;
+}
