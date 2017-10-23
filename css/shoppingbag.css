@@ -1,0 +1,186 @@
+#question {
+    width:100%;
+    height: 44px;
+    border-bottom: 1px solid darkgrey;
+    line-height: 44px;
+    margin-top: 60px;
+}
+#question p{
+    font-size: 12px;
+    text-align: center;
+}
+section{
+	width: 80%;
+	margin: 10px auto;
+	overflow: hidden;
+}
+#main_goback a{
+    display: inline-block;
+    height: 30px;
+}
+#main_goback a img{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+#main_goback a span{
+    display: inline-block;
+    width: 100px;
+    height: 18px;
+    font-size: 12px;
+    color: darkgrey;
+}
+#title{
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+	font-size: 35px;
+	font-weight: normal;
+	font-family: "微软雅黑";
+}
+#howmany{
+	margin-top: 5px;
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	color: darkgrey;
+}
+#howmany span{
+	padding-right:3px ;
+}
+#BuyProductList{
+	margin: 0 auto;
+	margin-top: 40px;
+	background-color: white;
+	overflow: hidden;
+}
+#buyproductlist{
+	float: left;
+	width: 57%;
+	padding-left: 1%;
+	border-top: 1px solid gainsboro;
+	border-bottom: 1px solid gainsboro;
+}
+#moneylist{
+	border-top: 5px solid black;
+	border-bottom: 1px solid gainsboro;
+	float: right;
+	width: 28%;
+	padding: 20px 5px;
+	position: absolute;
+	top: 200px;
+	right: 110px;
+}
+.boughtProduct{
+	width: 100%;
+	padding: 20px 0;
+	position: relative;
+}
+.goodsimg{
+	display: inline-block;
+	width: 15%;
+	height: 15%;
+	vertical-align: middle;
+}
+.goodsmessage{
+	display:inline-block ;
+	width: 82%;
+	font-size: 12px;
+	vertical-align: middle;
+}
+.delethref{
+	display: block;
+	font-size: 25px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.goodsnameE{
+	display: inline-block;
+	width: 70%;
+	font-size: 13px;
+	color: black;
+	font-weight: 600;
+}
+.goodsnameC{
+	display: inline-block;
+	width: 70%;
+	font-size: 13px;
+	color: gainsboro;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+.numberC{
+	position: absolute;
+	right: 130px;
+	bottom: 65px;
+}
+.incnumbtn{
+	display: inline-block;
+	border: 1px solid gainsboro;
+	line-height: 20px;
+	box-sizing: border-box;
+	font-size: 16px;
+	padding: 5px 10px;
+	margin-left: 5px;
+	position: absolute;
+    right: 59px;
+    bottom: 55px;
+}
+.incnumbtn button{
+	border: none;
+	background-color: white;
+	padding: 0;
+}
+.incnumbtn button img{
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	padding-left: 15px;
+}
+.goodsmoneycolor{
+	display: inline-block;
+	margin-right: 160px;
+}
+.goodsprices{
+	margin-top: 15px;
+	font-size: 16px;
+}
+.chosenumber{
+	position: absolute;
+	right: 59px;
+	border: 1px solid gainsboro;
+	border-top: none;
+	display: none;
+}
+.chosenumber p{
+	width: 59px;
+	height: 18px;
+	line-height: 18px;
+	font-size: 12px;
+	padding-left: 5px;
+	z-index: 100;
+}
+.unitprice{
+	margin-left: 5px;
+}
+.chosenumber p:hover{
+	background-color: gainsboro;
+}
+#moneylist p{
+	margin-bottom: 10px;
+	font-size: 13px;
+}
+#surepay{
+	width: 100%;
+	background-color: black;
+	color: white;
+	height: 40px;
+	line-height: 40px;
+	transition: 0.5s;
+	margin-top: 40px;
+}
+#surepay:hover{
+	background-color: gainsboro;
+	color: black;
+}

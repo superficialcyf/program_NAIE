@@ -8,84 +8,145 @@
 	<link rel="stylesheet" type="text/css" href="../css/publicHeader.css"/>
 </head>
 <body>
+	<!--顶部导航栏-->
 	<div id="headermain">
-		<a href="#" id="logo">
+		<a href="index.html" id="logo">
         <img src="../img/loginAndregistered/NAIE-logo.png" alt="哎呀！图片丢了！">
 	    </a>    
+	    <!--香水，彩妆， 护肤品菜单按钮-->
 	    <div id="header-nav">
-	        <a href="#" id="menu_perfume">香水</a>
-	        <a href="#" id="makeup">彩妆</a>
+	        <a href="perfumeindex.html" id="menu_perfume">香水</a>
+	        <a href="makeupindex.html" id="makeup">彩妆</a>
 	        <a href="#" id="careskin">护肤品</a>
 	        <a href="#" id="special">特别推荐</a>
 	    </div>
+	    <!--4大按钮-->
 	    <div id="header-features">
 	        <a href="#" id="login_over">登录</a>
-	        <a href="#" >
+	        <!--此处之后获得cookie,如果有数据InnerHTML变为我的账户，弹出菜单变化！-->
+	        <a href="#" id="shopping_over">
 	            <i class="iconfont icon-gouwudai"></i>
 	        </a>
-	        <a href="#">
+	        <a href="#" id="position_over">
 	            <i class="iconfont icon-dingwei"></i></a>
-	        <a href="#">
+	        <a href="#" id="search_over">
 	            <i class="iconfont icon-sousuo-copy"></i>
 	        </a>
 	    </div>
-    </div>
-    <div id="header_login" style="display: none;opacity: 0;transition: 0.5s;">
-    	<div id="content">
-    		<img src="../img/loginAndregistered/sanjiao.png" alt="" />
+	    <!--购物袋数字-->
+	    <p id="productNumber"></p>
+	    <!--弹出页面-->
+	    <!--1，登录-->
+	    <div id="header_login">
+	    	<div id="content">
+	    		<img src="../img/loginAndregistered/sanjiao.png" alt="" />
+	    	</div>
+	    	<div id="login_form" class="check_over">
+	    		<h3> 登录账户</h3>
+	    		<input type="text" placeholder="用户名" id="header_login_username"/>
+	    			<p id="ar_loginusername"></p>
+	    		<input type="password" placeholder="密码" id="header_login_password"/>
+	    		<p id="header_login_message" style="color: red;text-align: center;font-size: 14px;"></p>
+	    		<button id="header_login_btn" value="登录">登录</button>
+	    		<a href="#">忘记密码</a>
+	    		<a href="LoginAndRegistered.html">新用户注册</a>
+	    	</div>
+	    	<div id="myaccount" class="check_over" style="display: none;">
+	    		<div id="myaccountmenu">
+	    			<a href="#">我的个人资料</a>
+	    			<a href="#">我的地址簿</a>
+	    			<a href="#">我的订单</a>
+	    			<a href="#" style="border-bottom: 1px solid darkgray;padding-bottom: 5px;">我的愿望清单</a>
+	    		</div>
+	    		<a href="LoginAndRegistered.html" id="dropout" style="margin-top:10px;">退出账户</a>
+	    	</div>
     	</div>
-    	<div id="login_form" >
-    		<h3> 登录账户</h3>
-    		<input type="text" placeholder="用户名" id="header_login_username"/>
-    			<p id="ar_loginusername"></p>
-    		<input type="password" placeholder="密码" id="header_login_password"/>
-    		<button id="header_login_btn" value="登录">登录</button>
-    		<a href="#">忘记密码</a>
-    		<a href="LoginAndRegistered.html">新用户注册</a>
-    	</div>
-    	<div id="">
+    	<!--2，购物袋-->
+		<div id="header_shoppingbag">
+    		<div id="content">
+	    		<img src="../img/loginAndregistered/sanjiao.png" alt="" />
+	    	</div>
+    		<div id="productdetailss">
+    			<p id="ishaveproduct">您的购物袋中没有商品</p>
+	    		<div id="offer">
+	    			<img src="../img/loginAndregistered/shoppingbag.jpg"/>
+	    			<article>每笔订单均配有奈尔礼盒包装 <p>订购即享免费送达服务</p></article>
+	    		</div>
+	    		<button id="lookingshoppingbag"><a href="#">查看购物袋</a></button>
+    		</div>
     		
     	</div>
-    </div>
+    	<!--3，定位-->
+		<div id="header_position">
+    		<div id="content">
+	    		<img src="../img/loginAndregistered/sanjiao.png" alt="" />
+	    	</div>
+	    	<div id="position_form">
+	    		<h2>寻找销售店铺</h2>
+	    		<div id="looking_input">
+	    			<button id="place">所在地</button>
+	    			<div id="divDom">
+	    				<input type="text" placeholder="城市/城市"/ id="searchcity">
+	    				<button id="search_tbn"><i class="iconfont icon-sousuo-copy"></i></button>
+	    			</div>
+	    		</div>
+	    	</div>
+    	</div>
+		<!--4，搜索-->
+		<div id="header_search">
+			<div id="content">
+	    		<img src="../img/loginAndregistered/sanjiao.png" alt="" />
+	    	</div>
+			<div id="search_form">
+				<div id="search_content">
+					<input type="text" name="search_word" id="search_word" value="" placeholder="搜索..."/>
+					<i class="iconfont icon-sousuo-copy"></i>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<!--弹出菜单栏-->
     <div id="headerMenuBox">
     	<div id="headerMenu" >
     		<!--//香水MENU-->
     		<div id="ladyperfume">
     			<div id="ladyperfumeheader" class="partsname">
-    				<a href="#">女士香水</a>
+    				<a href="LadyPerfumeProduct.html">女士香水</a>
     			</div>
     			<div id="ladyperfumeimg" class="showImg">
     				<img src="../img/perfume/1.jpg" alt="" id="lady_perfumeImg"/>
     			</div>
     			<ul id="lady_perfumelist" class="list">
-    				<li><a href="#">五号香水系列</a></li>
-    				<li><a href="#">可可小姐香水系列</a></li>
-    				<li><a href="#">香奈儿嘉柏丽尔香水系列</a></li>
-    				<li><a href="#">邂逅香水系列</a></li>
-    				<li><a href="#">邂逅清新淡香水系列</a></li>
-    				<li><a href="#">邂逅柔情淡香水系列</a></li>
-    				<li><a href="#">邂逅活力淡香水系列</a></li>
-    				<li><a href="#">可可小姐黑色香水系列</a></li>
-    				<li><a href="#">可可香水系列</a></li>
-    				<li><a href="#">香奈儿魅力香水系列</a></li>
-    				<li><a href="#">香奈儿感性魅力香水系列</a></li>
-    				<li><a href="#">十九号香水系列</a></li>
-    				<li><a href="#">水晶恋香水系列</a></li>
+    				<li><a href="LadyPerfumeProduct.html?address=1">五号香水系列</a></li>
+    				<li><a href="LadyPerfumeProduct.html?address=2">可可小姐香水系列</a></li>
+    				<li><a href="LadyPerfumeProduct.html?address=3">香奈儿嘉柏丽尔香水系列</a></li>
+    				<li><a href="LadyPerfumeProduct.html?address=4">邂逅香水系列</a></li>
+    				<li><a href="LadyPerfumeProduct.html?address=5">邂逅清新淡香水系列</a></li>
+    				<li><a href="LadyPerfumeProduct.html?address=6">邂逅柔情淡香水系列</a></li>
+    				<li><a href="LadyPerfumeProduct.html?address=7">邂逅活力淡香水系列</a></li>
+    				<li><a href="LadyPerfumeProduct.html?address=8">可可小姐黑色香水系列</a></li>
+    				<li><a href="LadyPerfumeProduct.html?address=9">可可香水系列</a></li>
+    				<li><a href="LadyPerfumeProduct.html?address=10">香奈儿魅力香水系列</a></li>
+    				<li><a href="LadyPerfumeProduct.html?address=11">香奈儿感性魅力香水系列</a></li>
+    				<li><a href="LadyPerfumeProduct.html?address=12">十九号香水系列</a></li>
+    				<li><a href="LadyPerfumeProduct.html?address=13">水晶恋香水系列</a></li>
     			</ul>
     		</div>
     		<div id="manperfume">
     			<div id="manperfumeheader" class="partsname">
-    				<a href="#">男士香水</a>
+    				<a href="ManPerfumeProduct.html">男士香水</a>
     			</div>
     			<div id="manperfumeimg" class="showImg">
     				<img src="../img/perfume/man1.jpg" alt="" id="man_perfumeImg"/>
     			</div>
     			<ul id="man_perfumelist" class="list">
-    				<li><a href="#">蔚蓝男士香水系列</a></li>
-    				<li><a href="#">男士运动香水系列</a></li>
-    				<li><a href="#">男士香水系列</a></li>
-    				<li><a href="#">白色魅力精粹男士香水系列</a></li>
-    				<li><a href="#">香奈儿白金男性香水系列</a></li>
+    				<li><a href="ManPerfumeProduct.html?name=1">蔚蓝男士香水系列</a></li>
+    				<li><a href="ManPerfumeProduct.html?name=2">男士运动香水系列</a></li>
+    				<li><a href="ManPerfumeProduct.html?name=3">男士香水系列</a></li>
+    				<li><a href="ManPerfumeProduct.html?name=4">白色魅力精粹男士香水系列</a></li>
+    				<li><a href="ManPerfumeProduct.html?name=5">香奈儿白金男性香水系列</a></li>
     			</ul>
     		</div>
 			<!--//彩妆MENU-->
@@ -235,13 +296,16 @@
     			</ul>
 			</div>
     	</div>
+    	<!--底部关闭按钮-->
     	<div id="close">
     		<a href="#" id="btnclose">关闭<span><img src="../img/loginAndregistered/up.png" alt="" /></span></a>
     	</div>
     </div>
+    <!--底部蒙版-->
     <div id="bac"></div>
 </body>
 </html>
 <script type="text/javascript" src="../js/jquery3-2-1.min.js"></script>
+<script type="text/javascript" src="../js/cookieTools.js"></script>
 <script type="text/javascript" src="../js/regExpTools.js"></script>
-<!--<script type="text/javascript" src="../js/publicHeader.js"></script>-->
+<script type="text/javascript" src="../js/publicHeader.js"></script>

@@ -1,0 +1,283 @@
+html{
+	position: relative;
+}
+body{
+	position:relative;
+}
+button{
+	border: 0;
+	background-color: black;
+	text-align: center;
+	width: 100px;
+	height: 40px;
+	padding: 0;
+}
+#top_nav{
+	width: 100%;
+	height: 55px;
+	background-color: white;
+	text-align: center;
+	position:fixed;
+	top: 60px;
+	left: 0;
+	box-shadow: 0px 4px 15px darkgrey;
+}
+#top_nav a{
+	line-height: 55px;
+	text-align: center;
+	font-size: 14px;
+	color: darkgray;
+	padding: 0 15px;
+}
+#top_nav a:hover{
+	color: black;
+}
+#main{
+	width: 100%;
+}
+#MakeupMouseProduct{
+	width: 80%;
+	margin: 130px auto;
+}
+#address {
+	color: darkgray;
+	font-size: 12px;
+}
+#address p a{
+	color: darkgray;
+	font-size: 12px;
+}
+#address p a:hover{
+	text-decoration: underline;
+}
+#Lipstick{
+	width: 100%;
+	overflow: hidden;
+}
+#Lipstick h1{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 30px;
+}
+.lipstickList{
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 120px;
+}
+.lipstickproductone img{
+	width: 48%;
+	height: 48%;
+}
+.lipstickMessage{
+	float: right;
+	width: 48%;
+	padding: 0 1%;
+}
+.lipstickproductone{
+	float: left;
+	width: 48%;
+	padding: 0 1%;
+}
+.lipstickproducttwo{
+	float: right;
+	width: 48%;
+	padding: 0 1%;
+}
+.lipstickMessage button a{
+	display: inline-block;
+	color: white;
+	width: 100%;
+	height: 100%;
+	line-height: 40px;
+}
+.lipstickMessage button a:hover{
+	background-color: darkgray;
+	color: black;
+}
+.lipstickMessage p{
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.lipstickMessage .xianliang{
+	background-color: black;
+	color: white;
+	width: 42px;
+	margin-top: 20px;
+}
+.lipstickMessage .colormessagepublic{
+	margin-bottom: 30px;
+	color: darkgrey;
+	font-size: 12px;
+}
+.lipstickMessage .money{
+	margin-bottom: 20px;
+}
+.lipstickproducttwo{
+	text-align: center;
+	position: relative;
+}
+#positiontwo{
+	position:relative;
+}
+#positionthree{
+	position:relative;
+}
+.lipstickproducttwo td{
+	width: 30px;
+	height: 30px;
+}
+
+.showcolormessage{
+	opacity: 0;
+	border: 1px solid darkgrey;
+	line-height: 20px;
+	height: 20px;
+	padding: 5px 8px;
+	position:absolute;
+	top: 0px;
+	left:0px;
+	background: rgba(255,255,255,.8);
+	font-size: 12px;
+}
+#main table{
+	display: inline-block;
+	background-position: -1px -1px;
+	background-size: 100% 100%;
+}
+#table1{
+	background: url(../img/makeup/color.jpg) no-repeat;
+}
+#table2{
+	background:url(../img/makeup/colormessage.jpg) no-repeat;
+}
+#table3{
+	background: url(../img/makeup/colormessage2.jpg) no-repeat;
+}
+.lipstickMessage .colormessagetwo{
+	font-size: 12px;
+	color: darkgray;
+	margin-bottom: 30px;
+}
+#productimg{
+	width: 350px;
+	height: 350px;
+	display: inline-block;
+}
+#mainshopping button img{
+	width: 20px;
+	height: 20px;
+}
+#mainshopping button{
+	background-color: white;
+}
+#mainshopping{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.7);
+	z-index: 99999;
+	display: none;
+}
+#shoppingmessage{
+	display: inline-block;
+	margin-left: 50px;
+	position: relative;
+}
+#shoppingpage{
+	position: fixed;
+	top: 23%;
+	left: 18%;
+	background-color: white;
+	padding: 20px;
+	padding-bottom: 80px;
+	overflow: hidden;
+	width: 60%;
+}
+#productnameE{
+	display: block;
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+#productnameC{
+	display: block;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+#productmessage{
+	font-size: 12px;
+	width: 270px;
+	overflow: hidden;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+#productcolor{
+	border: 1px solid darkgrey;
+	padding-left: 20px;
+	line-height: 40px;
+	overflow: hidden;
+	font-size: 14px;
+	display: block;
+	background-color: white;
+	margin-bottom: 30px;
+}
+#productcolor button{
+	float: right;
+	width: 40px;
+	height: 40px;
+}
+#productnumber{
+	border: 1px solid darkgrey;
+	margin-left: 5px;
+	vertical-align: middle;
+	display: inline-block;
+	background-color: white;
+	overflow: hidden;
+	padding-left: 10px;
+	line-height: 40px;
+}
+#productnumber button{
+	width: 40px;
+	height: 40px;
+	float: right;
+}
+#productprice{
+	text-align: right;
+	font-size: 14px;
+	display: block;
+}
+#baobtn{
+	margin-top: 10px;
+	text-align: right;
+}
+#baobtn #putInbtn{
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background-color: black;
+	color: white;
+}
+#baobtn #putInbtn:hover{
+	background-color: darkgrey;
+	color: black;
+}
+#numberlist{
+	display: none;
+	border:1px solid darkgrey;
+	border-top: none;
+	position: absolute;
+	left: 37px;
+}
+#numberlist p{
+	text-align: center;
+	line-height: 30px;
+	border-bottom: none;
+	width: 59px;
+	height: 30px;
+}
+#numberlist p:hover{
+	background-color: darkgrey;
+}

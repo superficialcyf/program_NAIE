@@ -2,6 +2,10 @@ html,body,div,p,ul,li,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,table,tr,td,form,hr,input,im
     margin: 0;
     padding: 0;
 }
+body{
+	overflow-x: hidden;
+	overflow-y:scroll;
+}
 a{
     text-decoration: none;
     color: black;
@@ -11,4 +15,11 @@ li{
 }
 img{
 	border: none;
+}
+input{
+	outline: none;
+}
+button{
+	outline: none;
+	border: none;!important
 }

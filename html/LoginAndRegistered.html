@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
     <link rel="stylesheet" href="../css/public.css">
     <link rel="stylesheet" href="../css/LoginAndRegistered.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
 </head>
 <body>
     <header>
@@ -30,19 +31,20 @@
                     </span>
                 </a>
                 <div id="login_input">
-                    <form action="get" id="form_login">
+                    <div action="get" id="form_login">
                         <label for="">电子邮箱或手机号码<span class="bu">*</span></label>
                         <input type="text" id="login_username">
-                        	<p id="ar_loginusername"></p>
+                        	<p id="ar_LoginUsername"></p>
                         <label for="">密码<span class="bu">*</span></label>
                         <input type="password" id="login_password">
                         	<p id="ar_loginpassword"></p>
                         <span>
                         <a href="#" id="forgetpassword">忘记密码？</a>
                         </span>
+                        <p id="loginmessage" style="color: red;font-size: 14px;text-align: center;"></p>
                         <button id="login_btn" value="登录">登录</button>
                         <span style="font-size: 12px;color: darkgrey;">*必填</span>
-                    </form>
+                    </div>
                     
                 </div>
             </div>
@@ -112,6 +114,7 @@
                     	</span>
                     </div>
                     <button id="newregisteredsubmit"/>确认并提交</button>
+                    <p id="registeredmessage" style="color: red;font-size: 14px;text-align: center;"></p>
                     <span style="font-size: 12px;color: darkgrey;">*必填</span>
                 </div>
             </div>
@@ -124,12 +127,15 @@
 </body>
 </html>
 <script type="text/javascript" src="../js/jquery3-2-1.min.js"></script>
+<script type="text/javascript" src="../js/ui.js"></script>
+<script type="text/javascript" src="../js/cookieTools.js"></script>
 <script type="text/javascript" src="../js/regExpTools.js" ></script>
 <script type="text/javascript" src="../js/LoginAndRegistered.js"></script>
 <script type="text/javascript">
 	window.onload = function (){
 		$("header").load("publicHeader.html",function(){
-			$('body').append('<script type="text/javascript" src="../js/publicHeader.js">')
+			$('body').append('<script type="text/javascript" src="../js/publicHeader.js">');
+			$('body').append('<script type="text/javascript" src="../js/IsCookie.js">');
 		});
 		$("footer").load("publicFooter.html");
 	}

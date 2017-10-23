@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>彩妆-唇部-奈尔网</title>
+	<link rel="stylesheet" type="text/css" href="../css/MakeupMouse.css"/>
+	<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<div id="bigdiv">
+	<header>
+		
+	</header>
+	<section id="top_nav">
+		<p>
+			<a href="#">所有</a>
+			<a href="#">新品</a>
+			<a href="#">限量版</a>
+		</p>
+	</section>
+	
+	<div id="mainshopping">
+		<div id="shoppingpage" >
+			<img id="productimg" src="../img/makeup/rouge-allure-_-04-imagination-35g.3145891600407.jpg" alt="" />
+			<div id="shoppingmessage">
+				<span id="productnameE"></span>
+				<span id="productnameC"></span>
+				<span id="productmessage"></span>
+				<span id="productcolor"><span id="buycolor">88-KAHS</span><button id="chosecolorbtn"><img src="../img/loginAndregistered/down (1).png" alt="" /></button></span>
+				<div id="colorlist">
+					
+				</div>
+				<span id="productprice"></span>
+				<label>数量</label><span id="productnumber"><span id="buynumber">1</span><button id="chosenumberbtn"><img src="../img/loginAndregistered/down (1).png"/></button></span>
+				<div id="numberlist">
+					<p>1</p>
+					<p>2</p>
+					<p>3</p>
+				</div>
+				<p id="baobtn"><button id="putInbtn">加入购物袋</button></p>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div id="main">
+		<div id="MakeupMouseProduct">
+			<div id="address">
+				<p><a href="makeupindex.html">彩妆</a>/唇部</p>
+			</div>
+			<div id="Lipstick">
+				<h1>唇膏</h1>
+			</div>
+		</div>
+	</div>
+	<footer>
+		
+	</footer>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="../js/jquery3-2-1.min.js"></script>
+<script type="text/javascript" src="../js/ui.js"></script>
+<script type="text/javascript" src="../js/cookieTools.js"></script>
+<script type="text/javascript" src="../js/MakeupMouse.js"></script>
+<!--<script type="text/javascript" src="../js/IsCookie.js"></script>-->
+<script type="text/javascript">
+	window.onload = function (){
+		$("header").load("publicHeader.html",function(){
+			$('body').append('<script type="text/javascript" src="../js/publicHeader.js">');
+			$('body').append('<script type="text/javascript" src="../js/IsCookie.js">');
+		});
+		$("footer").load("publicFooter.html");
+	}
+</script>

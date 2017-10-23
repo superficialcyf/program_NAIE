@@ -1,5 +1,8 @@
-
-
+$(function (){
+	
+//	获取cookie,改变登录选项
+})
+//		香水->女士香水hover事件
 		$("#lady_perfumelist > li").hover(
 			function (){
 				let liIndex = $("#lady_perfumelist > li").index(this);
@@ -13,6 +16,7 @@
 				this.style.cssText="";
 			}
 		)
+//		香水->男士香水hover事件
 		$("#man_perfumelist > li").hover(
 			function (){
 				let liIndex = $("#man_perfumelist > li").index(this);
@@ -26,6 +30,7 @@
 				this.style.cssText="";
 			}
 		)
+//		彩妆->脸部hover事件
 		$("#feace_makeuplist > li").hover(
 			function (){
 				let liIndex = $("#feace_makeuplist > li").index(this);
@@ -39,6 +44,7 @@
 				this.style.cssText="";
 			}
 		)
+//		彩妆->眼部hover事件
 		$("#eyes_makeuplist > li").hover(
 			function (){
 				let liIndex = $("#eyes_makeuplist > li").index(this);
@@ -52,6 +58,7 @@
 				this.style.cssText="";
 			}
 		)
+//		彩妆->唇部hover事件
 		$("#mouth_makeuplist > li").hover(
 			function (){
 				let liIndex = $("#mouth_makeuplist > li").index(this);
@@ -65,6 +72,7 @@
 				this.style.cssText="";
 			}
 		)
+//		彩妆->指甲油hover事件
 		$("#nail_makeuplist > li").hover(
 			function (){
 				let liIndex = $("#nail_makeuplist > li").index(this);
@@ -78,6 +86,7 @@
 				this.style.cssText="";
 			}
 		)
+//		彩妆->套刷hover事件
 		$("#brush_makeuplist > li").hover(
 			function (){
 				let liIndex = $("#brush_makeuplist > li").index(this);
@@ -91,6 +100,7 @@
 				this.style.cssText="";
 			}
 		)
+//		彩妆->季节妆容hover事件
 		$("#season_makeuplist > li").hover(
 			function (){
 				let liIndex = $("#season_makeuplist > li").index(this);
@@ -104,6 +114,7 @@
 				this.style.cssText="";
 			}
 		)
+//		护肤品->产品系列hover事件
 		$("#series_list > li").hover(
 			function (){
 				let liIndex = $("#series_list > li").index(this);
@@ -117,6 +128,7 @@
 				this.style.cssText="";
 			}
 		)
+//		护肤品->护肤步骤hover事件
 		$("#careskin_list > li").hover(
 			function (){
 				let liIndex = $("#careskin_list > li").index(this);
@@ -130,6 +142,7 @@
 				this.style.cssText="";
 			}
 		)
+//		护肤品->功效清hover事件
 		$("#effect_list > li").hover(
 			function (){
 				let liIndex = $("#effect_list > li").index(this);
@@ -143,14 +156,18 @@
 				this.style.cssText="";
 			}
 		)
+		
+//		关闭按钮
 		$("#btnclose").click(function (){
 			$("#headerMenuBox")[0].style.display="none";
 			$("#bac")[0].style.display="none";
 		})
+//		蒙版点击
 		$("#bac").click(function (){
 			$("#headerMenuBox")[0].style.display="none";
 			$("#bac")[0].style.display="none";
 		})
+//		香水鼠标悬停事件
 		$("#menu_perfume").hover(
 			function (){
 				this.style.color="darkgrey";
@@ -171,6 +188,7 @@
 				this.style.color="white";
 			}
 		)
+//		彩妆鼠标悬停事件
 		$("#makeup").hover(
 			function (){
 				this.style.color="darkgrey";
@@ -191,6 +209,7 @@
 				this.style.color="white";
 			}
 		)
+//		护肤品鼠标悬停事件
 		$("#careskin").hover(
 			function (){
 				this.style.color="darkgrey";
@@ -211,6 +230,7 @@
 				this.style.color="white";
 			}
 		)
+//		特别推荐鼠标悬停事件
 		$("#special").hover(
 			function (){
 				this.style.color="darkgrey";
@@ -220,33 +240,107 @@
 			}
 		)
 		
-		var overform=false;
+		var overform=false,
+			overposition=false,
+			oversearch=false,
+			overshopping=false;
+//		登录鼠标事件
 		$("#login_over").mouseover(function (){
-			let loginbtn=$("#menu_perfume").offset().right;
-			$("#header_login")[0].style.cssText="position:absolute;right:"+loginbtn+"px;top: 67px;";
 			$("#header_login")[0].style.display="block";
-			$("#header_login")[0].style.opacity="1";
+			$("#headerMenuBox")[0].style.display="none";
+			$("#bac")[0].style.display="none";
 			setTimeout(function(){
 				if(overform==false){
-						$("#header_login")[0].style.opacity="0";
 						$("#header_login")[0].style.display="none";
 					}
-				},2000)
+				},1000)
 		})
-		$("#login_form").mouseover(function (){
+		$(".check_over").mouseover(function (){
 			$("#header_login")[0].style.display="block";
-			$("#header_login")[0].style.opacity="1";
 			overform=true;
 			let timer=setInterval(function (){
 				if(overform==false){
-					$("#header_login")[0].style.opacity="0";
 					$("#header_login")[0].style.display="none";
 					window.clearInterval(timer);
 				}
-			},1000)
+			},500)
 		})
-		$("#login_form").mouseleave(function (){
+//		定位框鼠标事件
+		$("#position_over").mouseover(function (){
+			$("#header_position")[0].style.display="block";
+			$("#headerMenuBox")[0].style.display="none";
+			$("#bac")[0].style.display="none";
+			setTimeout(function(){
+				if(overposition==false){
+						$("#header_position")[0].style.display="none";
+					}
+				},1000)
+		})
+		$("#position_form").mouseover(function (){
+			$("#header_position")[0].style.display="block";
+			 overposition=true;
+			let timer=setInterval(function (){
+				if( overposition==false){
+					$("#header_position")[0].style.display="none";
+					window.clearInterval(timer);
+				}
+			},500)
+		})
+//		搜索框鼠标事件
+		$("#search_over").mouseover(function (){
+			$("#header_search")[0].style.display="block";
+			$("#headerMenuBox")[0].style.display="none";
+			$("#bac")[0].style.display="none";
+			setTimeout(function(){
+				if(oversearch==false){
+						$("#header_search")[0].style.display="none";
+					}
+				},1000)
+		})
+		$("#search_form").mouseover(function (){
+			$("#header_search")[0].style.display="block";
+			 oversearch=true;
+			let timer=setInterval(function (){
+				if( oversearch==false){
+					$("#header_search")[0].style.display="none";
+					window.clearInterval(timer);
+				}
+			},500)
+		})
+//		购物袋鼠标事件
+		$("#shopping_over").mouseover(function (){
+			$("#header_shoppingbag")[0].style.display="block";
+			$("#headerMenuBox")[0].style.display="none";
+			$("#bac")[0].style.display="none";
+			setTimeout(function(){
+				if(overshopping==false){
+						$("#header_shoppingbag")[0].style.display="none";
+					}
+				},1000)
+		})
+		$("#productdetailss").mouseover(function (){
+			$("#header_shoppingbag")[0].style.display="block";
+			 overshopping=true;
+			let timer=setInterval(function (){
+				if( overshopping==false){
+					$("#header_shoppingbag")[0].style.display="none";
+					window.clearInterval(timer);
+				}
+			},500)
+		})
+		
+//		小页面鼠标离开事件
+		$(".check_over").mouseleave(function (){
 			overform=false;
+		})
+		$("#position_form").mouseleave(function (){
+			overposition=false;
+		})
+		$("#search_form").mouseleave(function (){
+			oversearch=false;
+		})
+		$("#productdetailss").mouseleave(function (){
+			overshopping=false;
 		})
 		
 		

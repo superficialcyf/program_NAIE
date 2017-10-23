@@ -1,3 +1,8 @@
+#bigdiv{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
 header{
     width: 100%;
     height: 60px;
@@ -5,6 +10,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1000;
 }
 #headermain{
 	width: 80%;
@@ -12,6 +18,10 @@ header{
     justify-content: space-between;
     min-width:  840px;
     margin: 0 auto;
+    position:absolute;
+    left: 10%;
+    top: 0;
+    z-index: 100;
 }
 #logo{
 	overflow: hidden;
@@ -55,6 +65,7 @@ header{
 	position:fixed;
 	left: 0;
 	top: 60px;
+	z-index: 100;
 }
 
 #ladyperfume{
@@ -172,11 +183,11 @@ header{
 }
 /*登录小页面*/
 #header_login{
-	/*display: none;*/
+	display: none;
 	width: 280px;
 	margin-top: -20px;
 	position:absolute;
-	right: 21%;
+	right: 140px;
 	top: 67px;
 	background-color: white;
 }
@@ -206,6 +217,7 @@ header{
 #login_form input{
 	width: 80%;
 	margin: 5px auto;
+	padding: 10px 5px;
 }
 #header_login_btn{
 	width: 87%;
@@ -231,4 +243,164 @@ header{
 #login_form a:hover{
 	color: black;
 	text-decoration: none;
+}
+/*位置小页面*/
+#header_position{
+	display: none;
+	width: 280px;
+	margin-top: -20px;
+	position:absolute;
+	right: 50px;
+	top: 67px;
+	background-color: white;
+}
+#header_position h2{
+	width: 100%;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+	padding: 35px 0 13px 0;
+}
+#place{
+	width: 100%;
+	border: 1px solid dimgray;
+	background-color: white;
+	padding: 10px 0;
+	margin-bottom: 20px;
+}
+#position_form{
+	border-radius: 5px;
+	box-shadow: 4px 4px 15px dimgray;
+	padding: 0 5%;
+	text-align: center;
+	padding-bottom: 30px;
+}
+#searchcity{
+	width: 75%;
+	border-top: none;
+	border-left: none;
+	border-bottom: none;
+}
+#search_tbn{
+	width: 15%;
+	display: inline-block;
+	vertical-align:middle;
+	background-color: white;
+	border: none;
+}
+#search_tbn i{
+	font-size: 30px;
+	vertical-align: middle;
+}
+/*搜索小页面*/
+#header_search{
+	display: none;
+	width: 280px;
+	margin-top: -20px;
+	position:absolute;
+	right: 10px;
+	top: 67px;
+	background-color: white;
+}
+#header_search i{
+	font-size: 30px;
+	vertical-align: middle;
+}
+#search_form{
+	border-radius: 5px;
+	box-shadow: 4px 4px 15px dimgray;
+	padding: 5% 5%;
+	text-align: center;
+	padding-bottom: 30px;
+}
+#search_content{
+	border: 1px solid dimgray;
+}
+#search_form input{
+	width: 75%;
+	height: 10px;
+	border-top: none;
+	border-left: none;
+	border-bottom: none;
+}
+#divDom{
+	border: 1px solid dimgray;
+}
+/*购物袋小页面*/
+#productNumber{
+	font-size: 12px;
+	position:absolute;
+	right: 97px;
+	top: 25px;
+}
+#header_shoppingbag{
+	font-size: 12px;
+	display: none;
+	width: 280px;
+	margin-top: -20px;
+	position:absolute;
+	right:90px;
+	top: 67px;
+	background-color: white;
+}
+#productdetailss{
+	border-radius: 5px;
+	box-shadow: 4px 4px 15px dimgray;
+	padding: 5% 5%;
+	padding-bottom: 30px;
+	overflow: hidden;
+}
+#offer{
+	margin-top: 20px;
+}
+#productdetailss img{
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin-right: 10px;
+}
+#productdetailss article{
+	padding: 25px 0;
+	
+}
+#lookingshoppingbag{
+	width: 100%;
+	background-color: darkgrey;
+	padding:10px 0;
+	margin-top: 20px;
+	border: none;
+}
+#lookingshoppingbag a{
+	font-size: 12px;
+	color: white;
+}
+/*账户*/
+#myaccount{
+	border-radius: 5px;
+	box-shadow: 4px 4px 15px dimgray;
+	padding: 5% 5%;
+	text-align: center;
+	padding-bottom: 30px;
+}
+#myaccountmenu{
+	width: 80%;
+	margin: 0 auto;
+}
+#myaccount a{
+	display: block;
+	width: 100%;
+	font-size: 12px;
+	margin: 3px 0;
+	text-align: center;
+}
+#dropout{
+	color: darkgray;
+	text-decoration: underline;
+}
+#dropout:hover{
+	color: black;
+	text-decoration: none;
+}
+#myaccountmenu a:hover{
+	color: darkgrey;
 }
